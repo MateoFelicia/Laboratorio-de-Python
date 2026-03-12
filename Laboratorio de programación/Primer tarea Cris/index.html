@@ -1,31 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <script src="tienda.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Tecno tienda</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="tienda.js" defer></script>
 </head>
 
 <body>
+
     <header class="header">
+
         <h1 class="logo">Tecno tienda</h1>
-        <div class="buscador">
+
+        <div class="filtros">
+
             <input id="buscador" type="text" placeholder="Buscar productos...">
+
+            <select id="filtro-categoria">
+                <option value="todos">Todas las categorías</option>
+                <option value="perifericos">Periféricos</option>
+                <option value="monitores">Monitores</option>
+                <option value="streaming">Streaming</option>
+                <option value="audio">Audio</option>
+                <option value="gadgets">Gadgets</option>
+                <option value="muebles">Muebles</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="dispositivos">Dispositivos</option>
+            </select>
+
         </div>
+
         <div class="carrito-container">
+
             <div class="carrito-icono">
                 🛒 <span id="contador-carrito">0</span>
             </div>
+
             <div id="carrito-dropdown" class="carrito-dropdown">
                 <p>Carrito vacío</p>
             </div>
+
         </div>
+
     </header>
-    <div id="grid" class="grid"></div>
+
+    <main>
+        <div id="grid" class="grid"></div>
+    </main>
+
 </body>
 
 </html>
