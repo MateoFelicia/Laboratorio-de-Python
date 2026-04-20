@@ -66,3 +66,5 @@ Para ejecutar el programa:
 
 ```bash
 python simulacion.py
+
+porre
