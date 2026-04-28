@@ -44,6 +44,7 @@ class Nodo:
     def enviar_mensaje(self, mensaje):
         print("Enviando mensaje...")
         time.sleep(2) # Simula un retraso de 2 segundos
+        
         for conexion in self.conexiones:
             conexion.recibir_mensaje(mensaje, self.nombre)
 
